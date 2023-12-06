@@ -1,15 +1,13 @@
 cmake_minimum_required(VERSION 3.0.0)
-project(task)
+project(furina VERSION 0.1.0 LANGUAGES C CXX)
 
-set(CMAKE_CXX_STANDARD 11)
-set(CMAKE_CXX_STANDARD_REQUIRED True)
 find_package(OpenCV REQUIRED)
-
-aux_source_directory(./src ALL_SRCS)
-include_directories(include
-${OpenCV_INCLUDE_DIRS})
-
-set(SRC ./cc)
-
-add_executable(task main.cpp ${ALL_SRCS})
-target_link_libraries(task ${OpenCV_LIBS})
+include(CTest)
+enable_testing()
+include_directories(${OpenCV_INCLUDE_DIRS})
+add_executable(furina main.cpp)
+target_link_libraries(furina
+    ${OpenCV_LIBS})
+set(CPACK_PROJECT_NAME ${PROJECT_NAME})
+set(CPACK_PROJECT_VERSION ${PROJECT_VERSION})
+include(CPack)

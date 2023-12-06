@@ -1,12 +1,7 @@
 [
 {
-  "directory": "/home/caiersheng/下载/task/build",
-  "command": "/usr/bin/c++  -I/home/caiersheng/下载/task/include -isystem /usr/local/include/opencv -g -std=gnu++11 -o CMakeFiles/task.dir/main.cpp.o -c /home/caiersheng/下载/task/main.cpp",
-  "file": "/home/caiersheng/下载/task/main.cpp"
-},
-{
-  "directory": "/home/caiersheng/下载/task/build",
-  "command": "/usr/bin/c++  -I/home/caiersheng/下载/task/include -isystem /usr/local/include/opencv -g -std=gnu++11 -o CMakeFiles/task.dir/src/windmill.cpp.o -c /home/caiersheng/下载/task/src/windmill.cpp",
-  "file": "/home/caiersheng/下载/task/src/windmill.cpp"
+  "directory": "/home/caiersheng/下载/furina/build",
+  "command": "/usr/bin/clang++-12  -isystem /usr/local/include/opencv -g -o CMakeFiles/furina.dir/main.cpp.o -c /home/caiersheng/下载/furina/main.cpp",
+  "file": "/home/caiersheng/下载/furina/main.cpp"
 }
 ]
